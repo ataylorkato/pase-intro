@@ -1,12 +1,12 @@
 
 image:/assets/pase_intro_cover.bmp[alt=""]
 
-[.text-right]
+[.text-center]
 Align me to the left.
 
-
+[.text-center]
 On The Web: http://litmis.com[http://litmis.com]
-
+[.text-center]
 Follow on Twitter: http://twitter.com/litmisteam[@litmisteam]
-
+[.text-center]
 Connect via email: team@litmis.com
