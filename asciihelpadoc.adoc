@@ -1,0 +1,26 @@
+.An example table
+[width="50%",cols=">s,^m,e",frame="none",options="header,footer"]
+|==========================
+|      2+|Columns 2 and 3
+|1       |Item 1  |Item 1
+|2       |Item 2  |Item 2
+|3       |Item 3  |Item 3
+|4       |Item 4  |Item 4
+|footer 1|footer 2|footer 3
+|==========================
+
+[cols="2,2,5a"]
+|===
+|Firefox
+|image:/assets/litmis-learn.png[alt="Sunset", width="300", height="200"]
+|Mozilla Firefox is an open-source web browser.
+
+It's designed for:
+
+* standards compliance
+* performance
+* portability
+
+http://getfirefox.com[Get Firefox]!
+|===
+
