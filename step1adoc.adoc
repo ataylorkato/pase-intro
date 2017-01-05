@@ -25,11 +25,9 @@ You will be presented with the below pop-up.  Give a name to this space, enter t
 image:/assets/litmis_signup3.png[alt=""]
 
 Now you should see a new box on your page that represents your newly created Space.  
--
--
 
--
--
+image:/assets/litmis_space_minimal.png[alt="",width="100"]
+
 There are four buttons which constitute actions you can take with your Space.  They are (left to right):
 Shell prompt.  You will use this to enter commands in the PASE environment on the IBM i.   This is browser-based and doesn't require any software to be installed on your desktop.
 
