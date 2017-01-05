@@ -1,6 +1,8 @@
 # PASE Intro
 
-image:/assets/litmis-learn.png[alt=""]
+|====
+| image:/assets/litmis-learn.png[alt=""] | image:/assets/litmis-learn.png[alt=""]
+|====
 
 .An example table
 [width="50%",cols=">s,^m,e",frame="none",options="header,footer"]
