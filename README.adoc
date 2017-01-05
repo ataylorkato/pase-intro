@@ -1,5 +1,10 @@
 # PASE Intro
 
+image:/assets/litmis-learn.png[alt=""]
+
+image:/assets/litmis-learn.png[alt="Sunset", width="300", height="200"]
+
+
 On The Web: http://litmis.com[http://litmis.com]
 
 Follow on Twitter: http://twitter.com/litmisteam[@litmisteam]
