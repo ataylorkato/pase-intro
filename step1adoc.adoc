@@ -36,6 +36,6 @@ There are four buttons which constitute actions you can take with your Space.  T
 
 - *Space Information.*  Here you will find information about your space such as user profile, database schemas (aka libraries), ports for your web app to listen, Space id, etc.
 
-- *Delete Space.*  **WARNING!** If you select this option and the subsequent warning prompt, your Space will be deleted.  This CANNOT be undone.
+- *Delete Space.*  [red]**WARNING!** If you select this option and the subsequent warning prompt, your Space will be deleted.  This CANNOT be undone.
 
 [red]#Obvious# and [big red yellow-background]*very obvious*.
