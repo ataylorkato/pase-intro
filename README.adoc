@@ -1,7 +1,7 @@
 # PASE Intro
 
 |====
-| image:/assets/litmis-learn.png[alt=""] | image:/assets/litmis-learn.png[alt=""]
+| image:/assets/litmis-learn.png[alt="",width=50%] | image:/assets/litmis-learn.png[alt=""]
 |====
 
 .An example table
