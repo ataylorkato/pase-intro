@@ -9,8 +9,6 @@ Go to https://spaces.litmis.com (Ctrl+click to open new tab) and select SIGN IN,
 
 image:/assets/litmis_signup1.png[alt="",width="500"]
 
-
-
 Select the authentication mechanism of your choice.  If you don't have an account with the options listed, sign up for a free Github.com profile and return back to this page once your Github profile is setup.
 
 image:/assets/litmis_signup2.png[alt="",width="500"]
@@ -36,6 +34,5 @@ There are four buttons which constitute actions you can take with your Space.  T
 
 - *Space Information.*  Here you will find information about your space such as user profile, database schemas (aka libraries), ports for your web app to listen, Space id, etc.
 
-- *Delete Space.*  [red]**WARNING!** If you select this option and the subsequent warning prompt, your Space will be deleted.  This CANNOT be undone.
+- *Delete Space.*  **WARNING!** If you select this option and the subsequent warning prompt, your Space will be deleted.  This CANNOT be undone.
 
-[red]#Obvious# and [big red yellow-background]*very obvious*.

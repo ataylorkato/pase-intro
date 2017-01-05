@@ -1,6 +1,6 @@
 = Summary
 
 . link:README.adoc[Introduction]
-. link:step1adoc.adoc[Step1.adoc]
+. link:step1adoc.adoc[Step1: Setup LITMIS Space]
 . link:asciihelpadoc.adoc[asciihelp.adoc]
 
