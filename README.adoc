@@ -1,8 +1,6 @@
 [.text-center]
 image:/assets/pase_intro_cover.bmp[alt=""]
 
-[.text-center]
-Align me to the left.
 
 [.text-center]
 On The Web: http://litmis.com[http://litmis.com]
