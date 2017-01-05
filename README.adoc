@@ -1,38 +1,7 @@
-# My Awesome Book
+# PASE Intro
 
+On The Web: litmis.com[http://litmis.com]
 
-[cols="2,2,5a"]
-|===
-|Firefox
-|Browser
-|Mozilla Firefox is an open-source web browser.
+Follow on Twitter: @litmisteam
+Connect via email: team@litmis.com
 
-It's designed for:
-
-* standards compliance
-* performance
-* portability
-
-http://getfirefox.com[Get Firefox]!
-|===
-
-
-```ruby
-require 'sinatra'
-
-get '/hi' do
-  "Hello World!"
-end
-```
-
-[source,ruby]
-----
-require 'sinatra' // <1>
-
-get '/hi' do // <2>
-  "Hello World!" // <3>
-end
-----
-<1> Library import
-<2> URL mapping
-<3> HTTP response body
