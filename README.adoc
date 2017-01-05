@@ -1,5 +1,4 @@
 [.text-center]
-
 image:/assets/pase_intro_cover.bmp[alt=""]
 
 [.text-center]
