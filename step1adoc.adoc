@@ -7,26 +7,26 @@ In short, everything can be done through the browser - no need to install big ID
 
 Go to https://spaces.litmis.com (Ctrl+click to open new tab) and select SIGN IN, as show below.
 
-image:/assets/litmis_signup1.png[alt="",width="600"]
+image:/assets/litmis_signup1.png[alt="",width="500"]
 
 
 
 Select the authentication mechanism of your choice.  If you don't have an account with the options listed, sign up for a free Github.com profile and return back to this page once your Github profile is setup.
 
-image:/assets/litmis_signup2.png[alt="",width="600"]
+image:/assets/litmis_signup2.png[alt="",width="500"]
 
 Once logged in you can create a new space, as shown below.
 
-image:/assets/litmis_signup2.5.png[alt="",width="600"]
+image:/assets/litmis_signup2.5.png[alt="",width="500"]
 
 
 You will be presented with the below pop-up.  Give a name to this space, enter the promo code of BETA, select the Node.js radio button, and click the Create button.
 
-image:/assets/litmis_signup3.png[alt="",width="600"]
+image:/assets/litmis_signup3.png[alt="",width="500"]
 
 Now you should see a new box on your page that represents your newly created Space.  
 
-image:/assets/litmis_space_minimal.png[alt="",width="600"]
+image:/assets/litmis_space_minimal.png[alt="",width="500"]
 
 There are four buttons which constitute actions you can take with your Space.  They are (left to right):
 
