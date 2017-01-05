@@ -1,7 +1,7 @@
 # PASE Intro
 
-On The Web: litmis.com[http://litmis.com]
+On The Web: http://litmis.com[http://litmis.com]
 
-Follow on Twitter: @litmisteam
+Follow on Twitter: http://twitter.com/litmisteam[@litmisteam]
+
 Connect via email: team@litmis.com
-
