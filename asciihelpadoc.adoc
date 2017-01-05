@@ -24,3 +24,7 @@ It's designed for:
 http://getfirefox.com[Get Firefox]!
 |===
 
+
+[.text-center]
+Align me to the left.
+
