@@ -1,6 +1,13 @@
 = What Is PASE?
 
-toc::[]
+PASE is sometimes referred to as "the other side" of IBM i.  It can seem like a vague cloud of discomfort whenever we have to venture into it.  The only way to alleviate discomfort is to take some medicine; and the prescription we have to offer you is knowledge.
+
+By the end of this tutorial we hope you've gained a lot more knowledge about PASE and how it works; but even more so, how it can help your business succeed.
+
+---
+***
+
+== Defining PASE
 
 The http://www.ibm.com/support/knowledgecenter/[IBM i Knowledge Center] has this to say about https://kti.news/pase-v73[PASE]:
 
