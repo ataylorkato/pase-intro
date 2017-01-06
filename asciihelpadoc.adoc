@@ -41,3 +41,8 @@ end
 <2> URL mapping
 <3> HTTP response body
 
+# Images
+.**CALL QP2TERM from a 5250 Telnet Session**
+image::/assets/pase_call_qp2term1.png[Sunset, 300, 200]
+
+
