@@ -1,3 +1,5 @@
+= What Is PASE?
+
 The http://www.ibm.com/support/knowledgecenter/[IBM i Knowledge Center] has this to say about https://kti.news/pase-v73[PASE]:
 
 > PASE for i enables you to run many of your AIX® applications on the IBM® i operating system with little or no change, and effectively expands your platform solution portfolio.
