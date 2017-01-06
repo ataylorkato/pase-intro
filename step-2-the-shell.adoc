@@ -1,6 +1,6 @@
 = The Shell
 
-The https://kti.news/pase-v73[PASE] shell is a lot like a 5250 Telnet session; it's a program that takes your commands from the keyboard and hands them to the operating system to perform their associated action. It is also known as a CLI (*C*ommand *L*ine *I*nterface).
+You access PASE using what's called a __shell__. The https://kti.news/pase-v73[PASE] shell is a lot like a 5250 Telnet session; it's a program that takes your commands from the keyboard and hands them to the operating system to perform their associated action. It is also known as a CLI (*C*ommand *L*ine *I*nterface).
 
 By default PASE uses the Korn Shell (aka `ksh`). One way you can enter into a PASE Korn Shell via `CALL QP2TERM` from a 5250 Telnet session, as shown below.
 
@@ -43,7 +43,6 @@ Or on a Mac using https://www.iterm2.com[iTerm2].
 
 image:/assets/iterm_bash.png[alt=""]
 
-:toc: left
-
+Stay tuned for how you'll access the PASE shell for this lab.
 
 ## Please proceed to the next step.
