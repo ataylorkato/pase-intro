@@ -1,5 +1,7 @@
 = What Is PASE?
 
+toc::[]
+
 The http://www.ibm.com/support/knowledgecenter/[IBM i Knowledge Center] has this to say about https://kti.news/pase-v73[PASE]:
 
 > PASE for i enables you to run many of your AIX® applications on the IBM® i operating system with little or no change, and effectively expands your platform solution portfolio.
@@ -20,6 +22,8 @@ They should end that sentence with an exclamation point to convey the incredible
 - https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol[SFTP]
 - https://www.openssh.com/[OpenSSH]
 - zip and unzip 
+
+= PASE is like AIX is like Linux
 
 PASE is more or less AIX running on IBM i and is using IBM i as its kernel.  This is why the majority of AIX binaries run in PASE unchanged.  AIX has many similarities to Linux.  Because of the close affinity AIX has with Linux it means many things birthed in the Linux world can be made to work in PASE on IBM i.  
 
