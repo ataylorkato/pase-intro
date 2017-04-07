@@ -1,0 +1,9 @@
+# Shell Command Line Tips
+
+## Short-cut keys
+
+`Ctrl` + `A`: Go to beginning of line  
+
+`Ctrl` + `E`: Go to end of line  
+
+`Ctrl` + `U`: Cut current command and place into clipboard.  
