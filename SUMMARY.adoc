@@ -8,5 +8,6 @@
 * link:step-5-navigating-the-ifs.adoc[Step 5: Navigating the IFS]
 * link:step-x-command-line-tips.adoc[Step x: Command line tips]
 * link:asciihelpadoc.adoc[asciihelp.adoc]
+* link:brainstorming.adoc[brainstorming]
 
 
