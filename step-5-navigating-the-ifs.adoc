@@ -125,4 +125,26 @@ Now display the contents in your home directory using the `~` (tilde) approach y
 file.txt
 ```
 
+# Locating Files
+
+Sometimes you need to first locate a file before you do something with it.  The `find` command works good for that.  
+
+The `find` [documentation](http://man7.org/linux/man-pages/man1/find.1.html) declares the following syntax.
+```
+find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]
+```
+When you look at command documentation you should know that square brackets (i.e. `[` and `]`) denote optional parameters. In this case we're only interested in implementing `[starting-point...]` and `[expression]`.
+
+Run the below command to locate a file named `file.txt` (the expression) located somewhere in the `/home` (the starting point) directory.
+```
+~% find /home -name file.txt
+/home/USRU4WY0/file.txt
+```
+You can also do wildcards in the event you are wanting a list of files or aren't sure of the exact name.  Run the following command.
+```
+% find /home -name '*.txt'
+/home/USRU4WY0/file.txt
+```
+Notice the file name wildcard is now inside of quotes.  
+
 ## Please proceed to the next step.
