@@ -31,4 +31,33 @@ They should end that sentence with an exclamation point to convey the incredible
 
 PASE is more or less AIX running on IBM i and is using IBM i as its kernel.  This is why the majority of AIX binaries run in PASE unchanged.  AIX has many similarities to Linux.  Because of the close affinity AIX has with Linux it means many things birthed in the Linux world can be made to work in PASE on IBM i.  
 
+**PASE Facts:**
+
+- PASE is AIX except using IBM i kernel instead of AIX kernel
+- AIX compiled binaries are **not** emulated in any way
+- PASE processes run in IBM i jobs
+- PASE Enforces IBM i security
+- PASE exists as licensed program 5770SS1 option
+
+Here's a visual that shows how PASE communicates with the IBM i SLIC kernel.
+
+```
+                   -- WRKACTJOB --
+
+      :-------->NODEUSER/QTMHHTTP/432346<---------:
+      :                     :                     :
+  |----------|---------|  | : |  |----------|---------|
+  |        PASE        |  | : |  |       OS/400       |
+  | PHP       libc.a   |  | : |  | *PGM       *SRVPGM |
+  ========================| : |======================== MI (OS/400)
+  AIX/PASE SYSCALL        | : |MI instructions
+  privileged mode boundary| : |privileged mode boundary
+  ========================| : |========================
+  | IBM i SLIC kernel, same for OS/400 + PASE         |
+  | (completely replaced AIX kernel /unix)            |
+  |---------------------------------------------------|
+  |  POWER PC hardware processor                      |
+  |---------------------------------------------------|
+```
+
 ## Please proceed to the next step.

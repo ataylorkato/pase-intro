@@ -1,13 +1,13 @@
 = The Shell
 
-You access PASE using what's called a __shell__. The https://kti.news/pase-v73[PASE] shell is a lot like a 5250 Telnet session; it's a program that takes your commands from the keyboard and hands them to the operating system to perform their associated action. It is also known as a CLI (*C*ommand *L*ine *I*nterface).
+You access PASE using what's called a __shell__. A shell is an interface to the operating system.  The https://kti.news/pase-v73[PASE] shell is a lot like a 5250 Telnet session; it's a program that takes your commands from the keyboard and hands them to the operating system to perform their associated action. It is also known as a CLI (**C**ommand **L**ine **I**nterface).
 
-By default PASE uses the Korn Shell (aka `ksh`). One way you can enter into a PASE Korn Shell via `CALL QP2TERM` from a 5250 Telnet session, as shown below.
+By default PASE uses the Korn Shell (aka `ksh`). One way you can enter into a PASE Korn Shell is via `CALL QP2TERM` from a 5250 Telnet session, as shown below.
 
 .**CALL QP2TERM from a 5250 Telnet Session**
 image::/assets/pase_call_qp2term1.png[alt=""]
 
-The `pwd` command has been keyed in and the enter key pressed.  Under the covers the `pwd` C program is invoked, does its thing, and returns output back to your shell's screen.  You can see the Linux implementation of `pwd` https://kti.news/pase-pwd[here].
+The `pwd` (**P**rint **W**orking **D**irectory) command has been keyed in and the enter key pressed.  Under the covers the `pwd` C program is invoked, does its thing, and returns output back to your shell's screen.  You can see the Linux documentation of `pwd` https://kti.news/pase-pwd[here].
 
 
 == QP2TERM and QShell
@@ -15,7 +15,7 @@ If you've been on the IBM i for any amount of time you've probably been exposed 
 
 image:/assets/qshell_strqsh.png[alt=""]
 
-The primary difference between these two environments is that QShell is based on the ILE environment and CALL QP2TERM is based on AIX.  For 99% of what you do you will stay away from QShell because it doesn't operate correctly in certain circumstances.  The few scenarios you will use it involve starting a shell script from a 5250 session; but it will in turn enter into a real PASE shell.
+The primary difference between these two environments is that QShell is based on the ILE environment and `CALL QP2TERM` is based on AIX.  For 99% of what you do you will stay away from QShell because it doesn't operate correctly in certain circumstances.  The few scenarios you will use it involve starting a shell script from a 5250 session, as shown below.  When you do this it will in turn enter into a real PASE shell.
 ```
 SBMJOB CMD(QSH CMD('/path/to/script.sh parm1 parm2'))
 ```
