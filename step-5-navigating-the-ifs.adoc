@@ -124,6 +124,13 @@ Now display the contents in your home directory using the `~` (tilde) approach y
 /QOpenSys/myhome% ls ~
 file.txt
 ```
+Now run the below `cd` command to return to the immediate previous directory since the last time you ran `cd`.
+```
+/QOpenSys/myhome% cd -
+~
+~%
+```
+As you can see it returned you to your `~` (home) directory.
 
 # Locating Files
 
