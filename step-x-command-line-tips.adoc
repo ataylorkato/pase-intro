@@ -10,6 +10,11 @@ Before going further it would be good to teach you some short-cut key sequences 
 
 `Ctrl` + `U`: Cut current command and place into clipboard.  
 
+`Ctrl` + `C`: Terminate currently running command. Also works to clear the current line if you've typed a bunch of things but don't want to use it.
+
+`Ctrl` + `R`: Search for previous command.  This can be a short-cut to using `Up Arrow`.
+
+`Up Arrow`: Load previous commands.
 
 `Tab`: Press `tab1` while you are in the middle of typing a directory or file and it will attempt to finishing typing the file name for you.
 
@@ -43,4 +48,8 @@ A common scenario I'll have is listing a file's details and then subsequently ne
 Try the following.  Type the full path to the below file and hit the enter key.  Don't forget to use your `tab` completion skills.
 
 ```
-~% ls -al /QOpenSys/
+~% ls -al /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1
+-rwx------    1 usrmah25 0             85502 Jun 10 2016 /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1 
+``
+
+Now 
