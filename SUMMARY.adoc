@@ -7,7 +7,9 @@
 * link:step-4-start-a-shell-session.adoc[Step 4: Start A Shell Session]
 * link:step-5-navigating-the-ifs.adoc[Step 5: Navigating the IFS]
 * link:step-x-command-line-tips.adoc[Step 6: Command line tips]
+* link:step-7-the-joe-editor.adoc[Step 7: The joe Editor]
+* link:step-7-first-shell-script.adoc[Step 8: First Shell Script]
 * link:asciihelpadoc.adoc[asciihelp.adoc]
-* link:brainstorming.adoc[brainstorming]
+* link:step-7-the-joe-editor.adoc[Step 7: The joe Editor]
 
 
