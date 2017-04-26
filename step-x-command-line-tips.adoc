@@ -50,6 +50,35 @@ Try the following.  Type the full path to the below file and hit the enter key. 
 ```
 ~% ls -al /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1
 -rwx------    1 usrmah25 0             85502 Jun 10 2016 /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1 
-``
+```
 
-Now 
+Now press `Ctrl` + `A` to place your cursor at the beginning of the line and replace `ls -al` with `head` and hit enter.
+
+```
+~% head /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1       
+.\" =========================================================================   
+.\" Copyright (c) 1990-2008 Info-ZIP.  All rights reserved.
+.\"
+.\" See the accompanying file LICENSE, version 2007-Mar-4 or later
+.\" (the contents of which are also included in zip.h) for terms of use.
+.\" If, for some reason, all these files are missing, the Info-ZIP license
+.\" also may be found at:  ftp://ftp.info-zip.org/pub/infozip/license.html      
+.\"==========================================================================
+.\"
+.\" zip.1 by Mark Adler, Jean-loup Gailly and  R. P. C. Rodgers
+```
+
+As you can see it printed out the top of the using the [`head`](http://www.computerhope.com/unix/uhead.htm) command.
+
+Now press `Up Arrow` to retrieve the most recent command.  Now try pressing `Ctrl` + `E` to return to the end of the line and then `Ctrl` + `A` to go to the beginning.  Do that a couple times so you can become familiar to the keystrokes.
+
+### Try: `Ctrl` + `R`
+There will be times where using `Up Arrow` to retrieve a previously run command might entail going through a lot of commands. In that case you might try `Ctrl` + `R` which will bring up a prompt allowing you to search your shell history.
+
+To try this, press `Ctrl` + `R` and enter the beginning of one of the previous commands you've run.  Below I've entered `ls` for the command.
+
+```
+~% ls -al /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1
+bck-i-search: ls
+```
+
