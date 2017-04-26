@@ -82,3 +82,6 @@ To try this, press `Ctrl` + `R` and enter the beginning of one of the previous c
 bck-i-search: ls
 ```
 
+Once the command you need to run has been loaded into the command line then press `Enter`.
+
+## Please proceed to the next step.
