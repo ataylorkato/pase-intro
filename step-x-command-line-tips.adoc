@@ -1,5 +1,7 @@
 # Shell Command Line Tips
 
+Before going further it would be good to teach you some short-cut key sequences that will aid in more easily navigating the shell command line.
+
 ## Short-cut keys
 
 `Ctrl` + `A`: Go to beginning of line  
@@ -7,3 +9,38 @@
 `Ctrl` + `E`: Go to end of line  
 
 `Ctrl` + `U`: Cut current command and place into clipboard.  
+
+
+`Tab`: Press `tab1` while you are in the middle of typing a directory or file and it will attempt to finishing typing the file name for you.
+
+### Try `tab`
+Try the following.  Type in `cd /QO` and press the `tab` key.
+
+```
+~% cd /QO
+```
+
+It should auto complete to the following.
+
+```
+~% cd /QOpenSys/ 
+```
+
+Now type `cd /` and press the `tab` key.
+
+```
+~% cd /
+QOpenSys/  dev/       home/      opt@       tmp/       var/
+bin@       etc/       lib@       sbin@      usr/
+```
+
+As you can see it expands out to show everything that exists in the root (`/`) of the IFS. Note it leaves your cursor right where you left it so you can immediately start typing the directory name of your choice.
+
+### Try begin/end of line
+
+A common scenario I'll have is listing a file's details and then subsequently need to run a different command on the same file.  If your cursor is at the end of the line then that means you'll need to hold down the left arrow key until the cursor is at the beginning of the line.  **Or** you can take a short-cut and type `Ctrl` + `A` to go to the beginning of the line.
+
+Try the following.  Type the full path to the below file and hit the enter key.  Don't forget to use your `tab` completion skills.
+
+```
+~% ls -al /QOpenSys/

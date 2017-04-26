@@ -29,11 +29,11 @@ Instead what you should be using is a more feature rich shell, like `bash`.  The
 
 **Why is Bash better?**
 
-- **Tab key to complete.**  Instead of fully typing a directory or file name you can hit the tab key and it will auto complete it.
-- **Short-cut keys.**  For example, Ctrl+A and Crtl+E go to the beginning and end of the current line, respectively.
+- **Tab key to complete.**  Instead of fully typing a directory or file name you can hit the `tab` key and it will auto complete it.
+- **Short-cut keys.**  For example, `Ctrl`+`A` and `Ctrl`+`E` go to the beginning and end of the current line, respectively.  More on this later.
 - **Custom Prompt.** Bash allows you to customize your prompt to include things like the current directory, the current user. i.e. `[aaron@SPACES]/home/aaron/git$`
 
-The other thing you need to know is that, while bash works in QP2TERM, it is fairly crippled.  For example, the tab-to-complete and short-cut keys don't work in QP2TERM because it isn't what called a teletypewriter (TTY)  type terminal.  To get a TTY terminal we need to start the `*SSHD` (SSH Daemon)footnote:[STRTCPSVR *SSHD] server and then use a client-side program (on the desktop) to connect to a bash shell on IBM i.
+The other thing you need to know is that, while bash works in `QP2TERM`, it is fairly crippled.  For example, the tab-to-complete and short-cut keys don't work in `QP2TERM` because it isn't what called a teletypewriter (TTY)  type terminal.  To get a TTY terminal we need to start the `*SSHD` (SSH Daemon)footnote:[STRTCPSVR *SSHD] server and then use a client-side program (on the desktop) to connect to a bash shell on IBM i.
 
 Once the `*SSHD` TCP server is started you can then connect to it using a terminal client, as shown below on Windows using https://kti.news/gitbash-for-windows[Git Bash].
 

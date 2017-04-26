@@ -6,7 +6,7 @@
 * link:step1adoc.adoc[Step 3: Setup a LITMIS Space]
 * link:step-4-start-a-shell-session.adoc[Step 4: Start A Shell Session]
 * link:step-5-navigating-the-ifs.adoc[Step 5: Navigating the IFS]
-* link:step-x-command-line-tips.adoc[Step x: Command line tips]
+* link:step-x-command-line-tips.adoc[Step 6: Command line tips]
 * link:asciihelpadoc.adoc[asciihelp.adoc]
 * link:brainstorming.adoc[brainstorming]
 

@@ -2,6 +2,7 @@
 
 When you log in you are placed in a PASE shell and also into a directory in the IFS.  Previously we used `pwd` to print the current working directory.  Further, you can use the `ls` (list) command to display the contents of a directory.
 
+## Try: `ls`
 Try the `ls` command for yourself and you should see something like the below.
 
 ```
@@ -92,6 +93,10 @@ There are many more directories you can explore.  Here's a nicely formatted list
 `-- var 
 ```
 
+**IMPORTANT:** The `/QOpenSys` file system is case sensitive!  This is important to know as you continue to work through this lab because there is a difference between `/QOpenSys/mydir` and `/QOpenSys/Mydir`.
+
+## Try: Symbolic Links
+
 You'll notice some of them have `->` in front of them.  That means they're a symbolic link.  Symbolic links are similar to Windows desktop shortcuts; they point to something elsewhere on the file system.
 
 Go ahead and create your own symbolic link using the following `ln` command.
@@ -134,7 +139,7 @@ Now run the below `cd` command to return to the immediate previous directory sin
 
 As you can see it returned you to your `~` (home) directory.
 
-## Locating Files
+## Try: Locating Files
 
 Sometimes you need to first locate a file before you do something with it.  The `find` command works good for that.  
 
