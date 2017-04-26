@@ -4,23 +4,91 @@
 
 A shell script is stored in a text file, usually with a `.sh` extension, though no extension is necessary; it's the content that is important.
 
-Run the following command to create `first.sh`.
+Use `joe` to create `first.sh`, as shown below.
 
 ```
-~% echo "echo 'hi'" > first.sh
+~% joe first.sh
 ```
 
-What happened?  The http://www.computerhope.com/unix/uecho.htm[`echo`] command is for displaying a line of text.  In this case we directed the output from `echo` to `file.sh` using `>`. This is a simple and quick way to not only create a file but also occupy it with default content.
+Add this single line to `first.sh` and use `Ctrl` + `X` to save and exit.
 
 ```
-~% ./first.sh
+echo 'hello'
+```
+
+Now invoke `first.sh` by entering it by name on the command line and pressing `Enter`.
+
+```
+~% first.sh
 zsh: permission denied: ./first.sh
-[usrmah25@SPACES]~% ls -al                                                      
-total 120                                                                       
-drwxr-s---    3 usrmah25 0             12288 Apr 26 14:48 .                     
-drwxr-s---    3 usrmah25 0              8192 Apr 14 22:20 ..                    
--rw-r-----    1 usrmah25 0              1600 Apr 26 09:29 .settings             
-drwx--S---    2 usrmah25 0              8192 Apr 14 22:21 .ssh                  
--rwxrw-rw-    1 usrmah25 0               304 Apr 14 22:21 .zprofile             
--rw-------    1 usrmah25 0                10 Apr 26 14:48 first.sh
 ```
+
+The shell, `zsh`, is telling us we don't have execute permission.  Use the `ls -al` command to check the permissions.
+
+```
+~% ls -al first.sh
+-rw-------    1 usrmah25 0                12 Apr 26 16:28 first.sh
+```
+We've not discussed file system permissions yet so this output doesn't mean much to you.  In this case we're interested to see if the owner (you) has execute (`x`) authority to this file.  The owner permissions on in positions 2,3, and 4.  We can see `rw-` in those positions which means the owner has r=read and w=write permissions but **not** x=execute permission.
+
+Use the `chmod` command to add execute permissions for the owner, as shown below.
+
+```
+~% chmod +x first.sh
+~% ls -al first.sh
+-rwx------    1 usrmah25 0                12 Apr 26 16:28 first.sh 
+```
+
+As you can see the owner now has `rwx` permissions.  Try invoking `first.sh` again.
+
+```
+~% first.sh
+hello
+```
+
+**Success!!**
+
+Next rename `first.sh` to be `first`, essentially removing the `.sh` extension. 
+
+```
+~% mv first.sh first
+```
+
+Now invoke the shell script again using the new name.
+
+```
+~% first
+hello
+```
+
+**Success!!**
+
+### Try: Perl as script runtime
+
+We can tell the shell interpreter to not assume the contents of a script are shell commands.  In fact, we can tell it the contents are a completely different programming language like Perl!
+
+Edit the `first` file and place the below contents into it.  This is essentially a Perl hello world program.
+
+```
+#!/QOpenSys/QIBM/ProdData/OPS/tools/bin/perl                                    
+                                                                                
+use strict;                                                                     
+use warnings;                                                                   
+                                                                                
+print "Hello Perl!\n";
+```
+
+The first line in the program is called the https://en.wikipedia.org/wiki/Shebang_(Unix)[Shebang]
+
+It's important to note lines 3,4, and 6 are Perl syntax and the shell doesn't know how to interpret them.  Instead it looks at the Shebang line, if one exists, to determine what interpreter should be loaded to process the remainder of the file.
+
+Now try running the `first` program again, as shown below.
+
+```
+~% first
+Hello Perl!
+```
+
+**Success!**
+
+As you can see it successfully engaged the Perl interpreter to process the lines of Perl code.
