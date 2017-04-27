@@ -1,3 +1,79 @@
 # Configure Your Shell
 
-When you first log in there is a series of configuration files that are checked to determine if anything needs to be run before the command prompt is displayed.
+When you first log in there are default files run before the command prompt is displayed.  The file is different depending on which shell you are using.  For example, this lab is using `zsh` so the file looked at is `.zprofile`.  If we were using `bash` it would look for `.bash_profile` or `.profile`. Think of this being similar to the `INLPGM` parameter on `CRTUSRPRF`.
+
+The `.zprofile` file is located in the user's home directory, as shown below.
+
+```
+~% ls -al ~/.zprofile
+-rwx------    1 usrmah25 0               304 Apr 14 22:21 /home/USRMAH25/.zprofile
+```
+
+Now display the contents of `~/.zprofile` using the `cat` command.
+
+```
+~% cat ~/.zprofile
+TERM=xterm
+umask go=
+export LITMIS_SPACE_GUID=I7EDN
+export LITMIS_SPACE_USER=USRMAH25
+export LITMIS_SCHEMA_DEVELOPMENT=I7EDN_D
+export LITMIS_SCHEMA_TEST=I7EDN_T
+export LITMIS_SCHEMA_PRODUCTION=I7EDN_P
+export LITMIS_PORT_DEVELOPMENT=62883
+export LITMIS_PORT_TEST=62884
+export LITMIS_PORT_PRODUCTION=62885
+```
+
+Here we see a number of environment variables being set (i.e. `TERM`, `LITMIS_SPACE_GUID`, etc) and also the [`umask`](http://www.computerhope.com/unix/uumask.htm) command being run.   Environment variables hold values that can be made available to any program in this shell session.  Think of them as being similar to an IBM i https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rbam6/lclda.htm[Local Data Area (*LDA)], a place to hold data that is specific to this job.
+
+All of these environment variables are set once you log in.  You can see their values at any time using the `echo` command.  Try running the below command.
+
+```
+~% echo $LITMIS_SPACE_GUID
+I7EDN
+```
+
+As you can see it displayed the value stored in `LITMIS_SPACE_GUID`.
+
+## Try: Changing The Prompt
+
+In the `.zprofile` file we can also do things like alter what our prompt looks like.  For example, by default the prompt looks like the following.
+
+```
+[usrmah25@SPACES]~%
+```
+
+**NOTE:** Remember that for the sake of brevity this lab has been using `~%` vs. `[usrmah25@SPACES]~%`.
+
+By adding a line of code to `.zprofile` we could change the prompt to not only include information of the current user and working directory, but also apply specific colors to them.  For example, type the following into the shell.
+
+```
+print -P '%B%F{red}co%F{green}lo%F{blue}rs%f%b'
+```
+That will produce a result similar to the below screen shot.
+
+image:/assets/zsh_colors.png[alt=""]
+
+
+
+Here's what those %'s followed by letters mean.
+[width="15%"]
+|=======
+|%B(%b) |Start (stop) boldface mode.
+|%F (%f) | Start (stop) using a different foreground colour,
+|=======
+
+So basically it's giving us a way to delimit strings in the prompt and apply markup to them (i.e. change colors, bolding, etc).  If you like you can visit the http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html[zsh documentation] for more information on the variety of values that can be specified.
+
+Now run the following `print` statement.
+
+```
+print -P '%F{red}%n%f@%F{blue}%m%f %F{yellow}%1~%f %# ' 
+```
+
+You should now see something similar to the following.
+
+image:/assets/zsh_colors_user.png[alt=""]
+
+We're using the `print` command to quickly test and now it's time to apply this new shell prompt format permanently.  

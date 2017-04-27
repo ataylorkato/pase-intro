@@ -9,8 +9,8 @@
 * link:step-6-command-line-tips.adoc[Step 6: Command line tips]
 * link:step-7-the-joe-editor.adoc[Step 7: The joe Editor]
 * link:step-8-first-shell-script.adoc[Step 8: First Shell Script]
-* link:asciihelpadoc.adoc[asciihelp.adoc]
 * link:step-7-the-joe-editor.adoc[Step 7: The joe Editor]
 * link:step-9-configure-your-shell.adoc[Step 9: Configure Your Shell]
+* link:asciihelpadoc.adoc[asciihelp.adoc]
 
 

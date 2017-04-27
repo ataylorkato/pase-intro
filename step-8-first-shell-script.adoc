@@ -63,9 +63,39 @@ hello
 
 **Success!!**
 
-### Try: Perl as script runtime
+## Try: Passing Parameters 
 
-We can tell the shell interpreter to not assume the contents of a script are shell commands.  In fact, we can tell it the contents are a completely different programming language like Perl!
+When writing RPG or CL programs it is very common to pass inbound parameters.  Shell scripts have the same need.  Let's change the `first` program script to receive two parameters.
+
+Open the `first` file with `joe`.
+
+```
+~% joe first
+```
+ 
+Change the `echo` line to the following. 
+
+**NOTE:** Short-cut keys like `Ctrl` + `E` (go to end of line) work inside the `joe` editor.
+
+```
+MSG="hello $1. Your last name is $2"
+echo $MSG
+```
+
+As you can see we introduced `$1` and `$2` which are known as positional parameters.  These will contain the first and second parameters passed from the command line. The `MSG` variable was also introduced and is storing the resulting string.  Note that when we assign values to shell variables we don't include the `$` symbol and when we access the shell variable we include the `$` symbol.  This tells the shell interpreter to use the variable's value instead of it's name.
+
+Invoke the `first` script and pass in your first and last name, as shown below.
+
+```
+~% first Aaron Bartell
+hello Aaron. Your last name is Bartell
+```
+
+As you can see the `$1` was replaced with `Aaron` and `$2` was replaced with `Bartell`.
+
+### Try: Perl As Script Runtime
+
+We can tell the shell interpreter to not assume the contents of a script are shell commands.  In fact, we can tell it the contents are a completely different programming language, like Perl!
 
 Edit the `first` file and place the below contents into it.  This is essentially a Perl hello world program.
 
@@ -91,4 +121,4 @@ Hello Perl!
 
 **Success!**
 
-As you can see it successfully engaged the Perl interpreter to process the lines of Perl code.
+As you can see it successfully engaged the Perl interpreter to process the lines of Perl code.  You might ask **"why not just run `perl first`?**.  The cool thing about adding the Shebang approach is that it _feels_ like a command is being used and actually takes less key strokes to invoke.
