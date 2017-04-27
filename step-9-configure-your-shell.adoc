@@ -1,0 +1,3 @@
+# Configure Your Shell
+
+When you first log in there is a series of configuration files that are checked to determine if anything needs to be run before the command prompt is displayed.

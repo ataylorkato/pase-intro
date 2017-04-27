@@ -10,7 +10,7 @@ The http://www.ibm.com/support/knowledgecenter/[IBM i Knowledge Center] has this
 
 > PASE for i enables you to run many of your AIX® applications on the IBM® i operating system with little or no change, and effectively expands your platform solution portfolio.
 
-They should end that sentence with an exclamation point to convey the incredible amount of possibilities this opens for IBM i.  Some quick things that can be attributed to PASE (listed in alphabetical order):
+They should end that sentence with an exclamation point to convey the incredible amount of possibilities this opens for IBM i.  Some things that can be attributed to PASE (listed in alphabetical order):
 
 - http://httpd.apache.org/[Apache]
 - https://git-scm.com[Git]
@@ -59,5 +59,6 @@ Here's a visual that shows how PASE communicates with the IBM i SLIC kernel.
   |  POWER PC hardware processor                      |
   |---------------------------------------------------|
 ```
+
 
 ## Please proceed to the next step.
