@@ -12,5 +12,6 @@
 * link:step-7-the-joe-editor.adoc[Step 7: The joe Editor]
 * link:step-9-configure-your-shell.adoc[Step 9: Configure Your Shell]
 * link:step-10-the-pase-library-list.adoc[Step 10: The PASE Library List]
+* link:the-end.adoc[The End]
 
 
