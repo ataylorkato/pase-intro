@@ -82,7 +82,7 @@ MSG="hello $1. Your last name is $2"
 echo $MSG
 ```
 
-As you can see we introduced `$1` and `$2` which are known as positional parameters.  These will contain the first and second parameters passed from the command line. The `MSG` variable was also introduced and is storing the resulting string.  Note that when we assign values to shell variables we don't include the `$` symbol and when we access the shell variable we include the `$` symbol.  This tells the shell interpreter to use the variable's value instead of it's name.
+As you can see we introduced `$1` and `$2` which are known as positional parameters.  These will contain the first and second parameters passed from the command line. The `MSG` variable was also introduced and is storing the resulting string.  Note that when we assign values to shell variables we don't include the `$` symbol and when we access the shell variable we include the `$` symbol.  This tells the shell interpreter to use the variable's value instead of it's name.  Said another way, the `$` is **not** part of the variable name and instead declares to the shell to _"insert the variable's content here"_.
 
 Invoke the `first` script and pass in your first and last name, as shown below.
 
