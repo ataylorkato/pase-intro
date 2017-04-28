@@ -112,3 +112,5 @@ At this point the prompt changes still haven't taken effect because file `.zshrc
 image:/assets/zsh_final_color_prompt.png[alt=""]
 
 **Success!**
+
+## Please proceed to the next step.

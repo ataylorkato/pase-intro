@@ -50,3 +50,5 @@ Open `file.txt` again and remove the third line.  To do this first position curs
 Go ahead and exit without saving changes.
 
 **NOTE:** `joe` is great for times where you want to scroll up and and down in a large file.  This scenario is also a good time to use `Ctrl` + `X` because even if you accidentally made changes you don't want to keep them because you were only using `joe` to more easily navigate the file.  An alternative to displaying a file is to use the `cat`, `head`, or `tail` commands.
+
+## Please proceed to the next step.
