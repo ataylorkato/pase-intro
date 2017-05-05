@@ -16,7 +16,7 @@ Before going further it would be good to teach you some short-cut key sequences 
 
 `Up Arrow`: Load previous commands.
 
-`Tab`: Press `tab1` while you are in the middle of typing a directory or file and it will attempt to finishing typing the file name for you.
+`Tab`: Press `tab` while you are in the middle of typing a directory or file and it will attempt to finishing typing the file name for you.
 
 ### Try `tab`
 Try the following.  Type in `cd /QO` and press the `tab` key.
@@ -45,14 +45,14 @@ As you can see it expands out to show everything that exists in the root (`/`) o
 
 A common scenario I'll have is listing a file's details and then subsequently need to run a different command on the same file.  If your cursor is at the end of the line then that means you'll need to hold down the left arrow key until the cursor is at the beginning of the line.  **Or** you can take a short-cut and type `Ctrl` + `A` to go to the beginning of the line.
 
-Try the following.  Type the full path to the below file and hit the enter key.  Don't forget to use your `tab` completion skills.
+Try the following.  Type the full path to the below file and hit the `Enter` key.  Don't forget to use your `tab` completion skills.
 
 ```
 ~% ls -al /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1
 -rwx------    1 usrmah25 0             85502 Jun 10 2016 /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1 
 ```
 
-Now press `Ctrl` + `A` to place your cursor at the beginning of the line and replace `ls -al` with `head` and hit enter.
+Now press `Ctrl` + `A` to place your cursor at the beginning of the line and replace `ls -al` with `head` and hit `Enter`.
 
 ```
 ~% head /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1       
@@ -75,7 +75,7 @@ Now press `Up Arrow` to retrieve the most recent command.  Now try pressing `Ctr
 ### Try: `Ctrl` + `R`
 There will be times where using `Up Arrow` to retrieve a previously run command might entail going through a lot of commands. In that case you might try `Ctrl` + `R` which will bring up a prompt allowing you to search your shell history.
 
-To try this, press `Ctrl` + `R` and enter the beginning of one of the previous commands you've run.  Below I've entered `ls` for the command.
+To try this, press `Ctrl` + `R` and type the beginning of one of the previous commands you've run.  Below I've typed `ls` for the command.
 
 ```
 ~% ls -al /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1

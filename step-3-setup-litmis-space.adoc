@@ -1,6 +1,6 @@
-= Setup a LITMIS Space
+= Set up a LITMIS Space
 
-Now that you know a little about PASE it's time to setup your lab on an IBM i in the cloud.  Labs are conducted on **https://kti.news/2iMWsjL[Litmis Spaces] Multi Tenant**; a service from Krengeltech to provide preconfigured open source environments on IBM i cloud instances.
+Now that you know a little about PASE, it's time to set up your lab on an IBM i in the cloud.  Labs are conducted on **https://kti.news/2iMWsjL[Litmis Spaces] Multi Tenant**; a service from https://www.krengeltech.com[Krengel Technology] to provide preconfigured open source environments on IBM i cloud instances.
 
 **In short, everything can be done through the browser - no need to install a source editor or shell client on your desktop.  Happy day!**
 
@@ -8,7 +8,7 @@ Go to https://spaces.litmis.com and select **SIGN UP**, as show below.
 
 image:/assets/litmis_signup1.png[alt="",width="600",align="center"]
 
-Select the authentication mechanism of your choice.  If you don't have an account with the options listed, sign up for a free http://github.com[Github.com] profile and return back to this page once your Github profile is setup.
+Select the authentication mechanism of your choice.  If you don't have an account with any of the options listed, you can register a free http://github.com[Github.com] profile, and then return back to this page once your Github profile is set up.
 
 image:/assets/litmis_signup2.png[alt="",width="500",align="center"]
 

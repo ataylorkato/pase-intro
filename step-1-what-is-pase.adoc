@@ -1,8 +1,8 @@
-= What Is PASE?
+= What is PASE?
 
-PASE is sometimes referred to as "the other side" of IBM i.  It can seem like a vague cloud of discomfort whenever we have to venture into it.  The only way to alleviate discomfort is to take some medicine; and the prescription we have to offer you is knowledge.
+PASE is sometimes referred to as "the other side" of IBM i.  It can seem like a vague cloud of discomfort whenever we have to venture into it.  The only way to alleviate discomfort is to take some medicine, and the prescription we have to offer you is knowledge.
 
-By the end of this tutorial we hope you've gained a lot more knowledge about PASE and how it works; but even more so, how it can help your business succeed.
+By the end of this tutorial we hope you've gained a lot more knowledge about PASE and how it works - but even more so, how it can help your business succeed.
 
 ---
 
@@ -10,7 +10,7 @@ The http://www.ibm.com/support/knowledgecenter/[IBM i Knowledge Center] has this
 
 > PASE for i enables you to run many of your AIX® applications on the IBM® i operating system with little or no change, and effectively expands your platform solution portfolio.
 
-They should end that sentence with an exclamation point to convey the incredible amount of possibilities this opens for IBM i.  Some things that can be attributed to PASE (listed in alphabetical order):
+They __should__ end that sentence with an exclamation point to convey the incredible amount of possibilities this opens for IBM i.  Some things that can be attributed to PASE (listed in alphabetical order):
 
 - http://httpd.apache.org/[Apache]
 - https://git-scm.com[Git]
@@ -36,7 +36,7 @@ PASE is more or less AIX running on IBM i and is using IBM i as its kernel.  Thi
 - PASE is AIX except using IBM i kernel instead of AIX kernel
 - AIX compiled binaries are **not** emulated in any way
 - PASE processes run in IBM i jobs
-- PASE Enforces IBM i security
+- PASE enforces IBM i security
 - PASE exists as licensed program 5770SS1 option
 
 Here's a visual that shows how PASE communicates with the IBM i SLIC kernel.

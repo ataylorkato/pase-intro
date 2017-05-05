@@ -7,7 +7,7 @@ By default PASE uses the Korn Shell (aka `ksh`). One way you can enter into a PA
 .**CALL QP2TERM from a 5250 Telnet Session**
 image::/assets/pase_call_qp2term1.png[alt=""]
 
-The `pwd` (**P**rint **W**orking **D**irectory) command has been keyed in and the enter key pressed.  Under the covers the `pwd` C program is invoked, does its thing, and returns output back to your shell's screen.  You can see the Linux documentation of `pwd` https://kti.news/pase-pwd[here].
+The `pwd` (**P**rint **W**orking **D**irectory) command has been keyed in and the Enter key pressed.  Under the covers the `pwd` C program is invoked, does its thing, and returns output back to your shell's screen.  You can see the Linux documentation of `pwd` https://kti.news/pase-pwd[here].
 
 
 == QP2TERM and QShell
@@ -23,7 +23,7 @@ SBMJOB CMD(QSH CMD('/path/to/script.sh parm1 parm2'))
 A significant amount of more information concerning PASE shells can be found on the https://kti.news/yips-pase-shell[YiPs site] where Tony Cairns (IBM'er at Rochester) goes deep and wide on a variety of PASE topics.
 
 == A Better Shell
-Ok, we now know QShell should be used in limited fashion and that getting to the Korn shell (ksh) via `CALL QP2TERM` is better, but it still isn't the best.
+Ok, we now know QShell should be used in limited fashion, and that getting to the Korn shell (ksh) via `CALL QP2TERM` is better, but it still isn't the best.
 
 Instead what you should be using is a more feature rich shell, like `bash`.  The Bourne Again Shell (bash) is now included with http://bit.ly/dw-5733ops-tools[5733OPS option 7].
 

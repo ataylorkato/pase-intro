@@ -9,7 +9,7 @@ Try the `ls` command for yourself and you should see something like the below.
 ~% ls                                                          
 ~%
 ```
-Nothing was listed because the directory is empty.  Well, that's only partially true.  I just so happen to know there are "hidden" files in this directory.  Hidden files start with a period and aren't displayed by default.  Most all PASE commands have options that let you expound on what you want the command to do.  The PASE commands delivered with the IBM i operating system lack what are called "man pages", or manual pages, the documentation for the command.  Because of this we instead head to google and search for " http://linuxcommand.org/man_pages/ls1.html[ls command] ".
+Nothing was listed because the directory is empty.  Well, that's only partially true.  I just so happen to know there are "hidden" files in this directory.  Hidden files start with a period and aren't displayed by default.  Most all PASE commands have options that let you expound on what you want the command to do.  The PASE commands delivered with the IBM i operating system lack what are called "man pages", or manual pages, the documentation for the command.  Because of this we instead head to Google and search for " http://linuxcommand.org/man_pages/ls1.html[ls command] ".
 
 In the documentation we see the `-a` option, as shown below.
 ```
@@ -45,7 +45,7 @@ Change back to your "home" directory by issuing the following command.
 /home% cd ~
 ~%
 ```
-Notice is changed your prompt back to `~%` - the short form for the "home" directory.
+Notice the command changed your prompt back to `~%` - the short form for the "home" directory.
 
 Now try to list the contents of a directory that's further up the tree from where you're at - the root directory.  The root is the single forward slash (`/`).
 ```
@@ -53,7 +53,7 @@ Now try to list the contents of a directory that's further up the tree from wher
 QOpenSys  dev       home      opt       tmp       var                           
 bin       etc       lib       sbin      usr
 ```
-Displaying the root (`/`) directory gives you perspective as to what might be installed.  For example, if PowerRuby was installed you'd see a `/PowerRuby` directory.  If I wanted to see what other open source tools were installed from IBM I could do the following.
+Displaying the root (`/`) directory gives you perspective as to what might be installed.  For example, if PowerRuby was installed you'd see a `/PowerRuby` directory.  If I wanted to see what other open source tools were installed from IBM, I could do the following.
 
 ```
 ~% ls /QOpenSys/QIBM/ProdData/OPS
@@ -97,7 +97,7 @@ There are many more directories you can explore.  Here's a nicely formatted list
 
 ## Try: Symbolic Links
 
-You'll notice some of them have `->` in front of them.  That means they're a symbolic link.  Symbolic links are similar to Windows desktop shortcuts; they point to something elsewhere on the file system.
+You'll notice some of them have `->` in front of them.  This indicates that they're a symbolic link.  Symbolic links are similar to Windows desktop shortcuts; they point to something elsewhere on the file system.
 
 Go ahead and create your own symbolic link using the following `ln` command.
 ```
@@ -124,7 +124,7 @@ Change directory into `/QOpenSys/myhome` and create a new file with some content
 ~% cd /QOpenSys/myhome
 /QOpenSys/myhome% echo 'something' > file.txt
 ```
-Now display the contents in your home directory using the `~` (tilde) approach you should see the newly created `file.txt` file.
+Now display the contents of your home directory using the `~` (tilde) approach - you should see the newly created `file.txt` file.
 ```
 /QOpenSys/myhome% ls ~
 file.txt
@@ -141,7 +141,7 @@ As you can see it returned you to your `~` (home) directory.
 
 ## Try: Locating Files
 
-Sometimes you need to first locate a file before you do something with it.  The `find` command works good for that.  
+Sometimes you need to first locate a file before you do something with it.  The `find` command works well for that.  
 
 The `find`  http://man7.org/linux/man-pages/man1/find.1.html[documentation] declares the following syntax.
 
@@ -156,7 +156,7 @@ Run the below command to locate a file named `file.txt` (the expression) located
 ~% find /home -name file.txt
 /home/USRU4WY0/file.txt
 ```
-You can also do wildcards in the event you are wanting a list of files or aren't sure of the exact name.  Run the following command.
+You can also do wildcards in the event you want a list of files, or aren't sure of the exact name.  Run the following command.
 ```
 % find /home -name '*.txt'
 /home/USRU4WY0/file.txt

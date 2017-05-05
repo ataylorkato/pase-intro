@@ -1,6 +1,6 @@
 # The PASE Library List
 
-Ok, so PASE doesn't have a Library List in the same sense that we do with a 5250 session, but it does have something similar called a `PATH` environment variable.
+OK, so PASE doesn't have a Library List in the same sense that we do with a 5250 session, but it does have something similar called a `PATH` environment variable.
 
 Use the `echo` command to display the current value of the `PATH` environment variable.
 
@@ -9,7 +9,7 @@ Use the `echo` command to display the current value of the `PATH` environment va
 /QOpenSys/usr/bin:/usr/ccs/bin:/QOpenSys/usr/bin/X11:/usr/sbin:.:/usr/bin:/home/USRMAH25/bin
 ```
 
-The `PATH` environment variable contains a colon (`:`) delimited list of directories that should be searched when a command is entered in the shell.  This is similar to how a 5250 session works in that if you do a `CALL PGM1`, and if it isn't in a library that's in your library list then it won't find the program.  The alternative is to fully qualify `PGM1` with the library it is in.  
+The `PATH` environment variable contains a colon (`:`) delimited list of directories that will be searched when a command is entered in the shell.  This is similar to how a 5250 session works in that if you do a `CALL PGM1`, and if it isn't in a library that's in your library list then it won't find the program.  The alternative is to fully qualify `PGM1` with the library it is in.  
 
 The same concepts apply to the PASE `PATH` environment variable in that it will search the directories listed in `PATH` and nothing else.  
 
@@ -48,7 +48,7 @@ csh                 ld                  recode-sr-latin     zsh
 date                ln                  rjoe 
 ```
 
-Notice both the `echo` and `ls` commands, the commands we just ran, are both listed in `/QOpenSys/usr/bin`.  The shell was able to located them because they were in a directory listed in `PATH`.  But that's not the whole story because some of these commands don't physically exist in `/QOpenSys/usr/bin` and instead you're seeing what are called **symbolic links**.
+Notice both the `echo` and `ls` commands, the commands we just ran, are both listed in `/QOpenSys/usr/bin`.  The shell was able to locate them because they were in a directory listed in `PATH`.  However, that's not the whole story because some of these commands don't physically exist in `/QOpenSys/usr/bin` - instead you're seeing what are called **symbolic links**.
 
 Run the following `ls` command, note the addition of the `-al` option so we can see more details in the listing.
 
@@ -140,7 +140,7 @@ Remove the symbolic link using the following command so we can next test the `PA
 ~% rm /QOpenSys/usr/bin/cheesecurds
 ```
 
-Before going further please make sure you get the following error when running the `cheesecurds` command.
+Before going further, please make sure you get the following error when running the `cheesecurds` command.
 
 ```
 ~% cheesecurds
